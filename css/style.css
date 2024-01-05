@@ -1,0 +1,93 @@
+#slot {
+  /* border: solid;
+  box-sizing: content-box; */
+}
+
+.blink {
+  animation: blink 0.4s infinite alternate;
+  -webkit-animation: blink 0.4s infinite alternate;
+}
+
+@keyframes blink {
+  to {
+    background: #c3ad00;
+  }
+}
+
+@-webkit-keyframes blink {
+  to {
+    background: #c3ad00;
+  }
+}
+
+body {
+  background: transparent;
+}
+
+.gold {
+  color: gold !important;
+}
+
+.green {
+  color: green;
+}
+
+.v-align {
+  vertical-align: inherit !important;
+}
+
+div.modal-footer,
+div.modal-body,
+div.modal-header {
+  background-color: #000000de;
+  color: white;
+}
+
+.img-c {
+  filter: invert(40%) sepia(65%) saturate(1320%) hue-rotate(342deg) brightness(100%) contrast(97%);
+}
+.img-c-light {
+  filter: invert(5%) sepia(65%) saturate(1320%) hue-rotate(342deg) brightness(100%) contrast(97%);
+}
+.img-c-dark {
+  filter: invert(80%) sepia(65%) saturate(1320%) hue-rotate(342deg) brightness(100%) contrast(97%);
+}
+
+.credit-input {
+  background-color: transparent;
+  border: 0;
+  color: lightblue;
+  outline: none;
+  text-align: left;
+  max-width: 50px;
+}
+
+.shadow-bg {
+  display: flex;
+  flex-direction: row;
+  width: 435px;
+  margin-top: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.shadow-item {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  height: 32px;
+  flex: 1;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  margin-left: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.rotating {
+  animation: rotate 1s linear infinite; /* 设置动画名称、时长、速度曲线和重复次数 */
+}
+
+@keyframes rotate {
+  0%   { transform: rotate(0deg); } /* 初始状态为零度 */
+  100% { transform: rotate(360deg); } /* 结束状态为360度（完成一周）*/
+}
